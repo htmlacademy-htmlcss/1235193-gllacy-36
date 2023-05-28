@@ -166,7 +166,7 @@
                     </li>
                   </ul>
                   <div class="cart-container-bottom">
-                    <button class="button button-pink">Оформить заказ</button>
+                    <button class="button button-pink button-pink-cart">Оформить заказ</button>
                     <p class="cart-cost">Итого: 790 ₽</p>
                   </div>
                 </div>
@@ -381,32 +381,33 @@
         <a class="title title-mini title-article" href="#">10 способов сервировки фруктовых щербетов<br>к столу</a>
       </article>
       <section class="subscribe">
-        <div class="subscribe-container">
-        <p class="descr subscribe-descr">Подпишитесь на нашу сладкую рассылку и будьте всегда
-          в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
+        <p class="descr subscribe-descr">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>
+          в курсе всего самого вкусного, что у нас происходит. Обещаем<br>не спамить и не слать всякой ненужной ерунды.
           Честно =)</p>
         <form class="subscribe-form" action="http://htmlacademy.ru" method="post">
           <label class="subscribe-label">
-            <input type="email" name="email" placeholder="email@example.com" required>
+            <input class="subscribe-input" type="email" name="email" placeholder="email@example.com" required>
           </label>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button button-pink" type="submit">Отправить</button>
         </form>
-      </div>
       </section>
     </div>
     <section class="delivery">
       <div class="delivery-wrapper">
-        <h3 class="title third-title">
+        <h3 class="title third-title delivery-title">
           Доставка любимого мороженого на дом
         </h3>
         <p class="descr delivery-descr">
-          Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом,
+          Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин? Закажите доставку мороженого на дом,
           и курьер привезёт вам ваш заказ в течение часа!
         </p>
       </div>
       <div class="delivery-form">
+        <p class="descr delivery-form-descr">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</p>
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="data-descr">
+            <a class="delivery-link" href="#"><span class="visually-hidden">Подсказка</span></a>
+            <div class="tooltip tooltip-data">Введите дату</div>
             <label class="label data-label" for="data-name">Дата</label>
             <input class="field data-field" type="text" name="data-name" id="data-name" placeholder="01.04.2020"
               required>
@@ -417,11 +418,13 @@
               required>
           </div>
           <div class="address-descr">
+            <a class="delivery-link" href="#"><span class="visually-hidden">Подсказка</span></a>
+            <div class="tooltip tooltip-address">Введите название улицы, дома и квартиры</div>
             <label class="label address-label" for="address-name">Адрес</label>
             <input class="field address-field" type="text" name="address-name" id="address-name"
               placeholder="ул. Большая Конюшенная, 19/8" required>
           </div>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button button-pink button-pink-delivery" type="submit">Отправить</button>
         </form>
       </div>
     </section>
