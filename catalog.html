@@ -50,7 +50,7 @@
                     <a class="catalog-menu-link new-link" href="#">Новинки</a>
                   </li>
                   <li class="catalog-menu-item">
-                    <a class="catalog-menu-link" href="#">Сливочное</a>
+                    <a class="catalog-menu-link" href="catalog.html">Сливочное</a>
                   </li>
                   <li class="catalog-menu-item">
                     <a class="catalog-menu-link" href="#">Щербеты</a>
@@ -204,7 +204,25 @@
       </select>
     </fieldset>
     <fieldset class="filter-group">
-      <legend class="filter-group-title">Цена: 100 ₽ – 500 ₽</legend>
+      <legend class="visually-hidden">Цена</legend>
+      <div class="range-block-top">
+        <span class="filter-group-title">Цена:</span>
+        <input class="range-input" type="text" name="input-min" value="100 ₽"> -
+        <input class="range-input" type="text" name="input-max" value="500 ₽">
+      </div>
+      <div class="range-block">
+        <div class="scale">
+          <div class="range">
+            <span class="visually-hidden">Бегунок цены</span>
+          </div>
+        </div>
+        <button class="range-handle range-handle-min" type="button">
+          <span class="visually-hidden">Установить минимальную цену</span>
+        </button>
+        <button class="range-handle range-handle-max" type="button">
+          <span class="visually-hidden">Установить максимальную цену</span>
+        </button>
+      </div>
       </fieldset>
       <fieldset class="filter-group calorific-filter-group">
         <legend class="filter-group-title">Жирность:</legend>
@@ -415,6 +433,40 @@
     </div>
     </li>
   </ul>
+  <div class="pagination-wrapper">
+    <a class="button button-white pagination-button" href="#">Показать еще</a>
+    <ul class="pagination">
+      <li class="pagination-item">
+        <a class="pagination-link  pagination-link--disabled">
+          <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.80335 1.80515C6.06305 1.54545 6.06305 1.12439 5.80335 0.864696C5.54365 0.604997 5.12259 0.604997 4.8629 0.864696L0.194816 5.53277C-0.0640262 5.79162 -0.0648794 6.21075 0.192257 6.47065C0.193419 6.47183 0.194587 6.47301 0.19576 6.47418L4.86384 11.1423C5.12354 11.402 5.54459 11.402 5.80429 11.1423C6.06399 10.8826 6.06399 10.4615 5.80429 10.2018L1.60549 6.00301L5.80335 1.80515Z"/>
+            </svg>
+        </a>
+      </li>
+      <li class="pagination-item">
+            <a class="pagination-numbers-link pagination-numbers-link-active" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-numbers-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-numbers-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-numbers-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-numbers-link" href="#">5</a>
+          </li>
+        <li class="pagination-item">
+        <a class="pagination-link continue-link" href="#">
+          <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.80335 1.80515C6.06305 1.54545 6.06305 1.12439 5.80335 0.864696C5.54365 0.604997 5.12259 0.604997 4.8629 0.864696L0.194816 5.53277C-0.0640262 5.79162 -0.0648794 6.21075 0.192257 6.47065C0.193419 6.47183 0.194587 6.47301 0.19576 6.47418L4.86384 11.1423C5.12354 11.402 5.54459 11.402 5.80429 11.1423C6.06399 10.8826 6.06399 10.4615 5.80429 10.2018L1.60549 6.00301L5.80335 1.80515Z"/>
+            </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>
  </main>
  <footer class="page-footer">
