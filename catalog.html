@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalog</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 <body class="body-pink">
   <div class="page-container">
@@ -105,8 +106,8 @@
               </svg>
               Вход</a>
             <form class="enter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="enter-group">
-                <legend class="enter-title">Личный кабинет
+              <div class="enter-group">
+                <p class="enter-title">Личный кабинет</p>
                   <label class="visually-hidden" for="email">Ваша почта</label>
                   <input class="enter-input input-top" type="email" name="email" id="email" value="email@example.com">
                   <label class="visually-hidden" for="password">Ваш пароль</label>
@@ -119,8 +120,7 @@
                       <a class="enter-form-link" href="#">Регистрация</a>
                     </div>
                   </div>
-                </legend>
-              </fieldset>
+                </div>
             </form>
           </li>
           <li class="nav-item-right">
@@ -138,7 +138,7 @@
                 <form action="https://echo.htmlacademy.ru/" method="post">
                 <ul class="cart-list">
                   <li class="cart-item">
-                    <a class="cart-link-image" href="#"><img src="images/cremy raspberry.jpg" width="46" height="46"
+                    <a class="cart-link-image" href="#"><img src="images/cremy-raspberry.jpg" width="46" height="46"
                         alt="Мороженое малинка.">
                     </a>
                     <div class="cart-wrapper-small">
@@ -152,7 +152,7 @@
                     <input type="hidden" name="cart-item" value="Малинка">
                   </li>
                   <li class="cart-item">
-                    <a class="cart-link-image" href="#"><img src="images/buble gum.jpg" width="46" height="46"
+                    <a class="cart-link-image" href="#"><img src="images/buble-gum.jpg" width="46" height="46"
                         alt="Мороженое бабл-гам.">
                     </a>
                     <div class="cart-wrapper-small">
@@ -193,21 +193,21 @@
   </ol>
 </section>
 <section class="catalog-filter">
-  <h2 class="title hero-title"> Сливочное мороженое</h2>
+  <h2 class="title catalog-hero-title"> Сливочное мороженое</h2>
   <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
     <fieldset class="filter-group">
       <legend class="filter-group-title">Сортировка:</legend>
       <select class="select-control" aria-label="Сортировка">
-        <option value="popular">По популярности</option>
-        <option value="cost">По цене</option>
-        <option value="discount">По скидке</option>
+        <option value="popular">по популярности</option>
+        <option value="cost">по цене</option>
+        <option value="discount">по скидке</option>
       </select>
     </fieldset>
     <fieldset class="filter-group">
       <legend class="visually-hidden">Цена</legend>
       <div class="range-block-top">
         <span class="filter-group-title">Цена:</span>
-        <input class="range-input" type="text" name="input-min" value="100 ₽"> -
+        <input class="range-input" type="text" name="input-min" value="100 ₽"> —
         <input class="range-input" type="text" name="input-max" value="500 ₽">
       </div>
       <div class="range-block">
@@ -225,7 +225,7 @@
       </div>
       </fieldset>
       <fieldset class="filter-group calorific-filter-group">
-        <legend class="filter-group-title">Жирность:</legend>
+        <legend class="filter-group-title calorific-group-title">Жирность:</legend>
         <ul class="radio-list">
           <li class="radio-item">
             <input class="radio-input visually-hidden" type="radio" name="calorific-group" value="zero" id="zero">
@@ -275,6 +275,7 @@
   </form>
 </section>
 <section class="gallery-index">
+  <h2 class="visually-hidden">Галерея вкусов</h2>
     <ul class="gallery-list">
     <li class="gallery-item catalog-gallery-item">
       <a href="#" class="title gallery-title link">Малинка</a>
@@ -286,7 +287,7 @@
           </svg>
         <span class="visually-hidden">Добавить в корзину</span></a>
       <div class="gallery-container">
-      <img src="images/cremy raspberry.jpg" width="168" height="168" alt="Вид мороженного.">
+      <img src="images/cremy-raspberry.jpg" width="168" height="168" alt="Вид мороженного.">
     </div>
     </li>
     <li class="gallery-item catalog-gallery-item">
@@ -325,7 +326,7 @@
           </svg>
           <span class="visually-hidden">Добавить в корзину</span></a>
       <div class="gallery-container">
-      <img src="images/buble gum.jpg" width="168" height="168" alt="Вид мороженного.">
+      <img src="images/buble-gum.jpg" width="168" height="168" alt="Вид мороженного.">
     </div>
     </li>
     <li class="gallery-item catalog-gallery-item">
@@ -343,7 +344,7 @@
     </li>
     <li class="gallery-item catalog-gallery-item">
       <a href="#" class="title gallery-title link">Банан</a>
-      <p class="descr gallery-descr">Сливочный пломбир с банановым вкусом</p>
+      <p class="descr gallery-descr">Сливочный пломбир<br>с банановым вкусом</p>
       <span class="gallery-span">340 ₽/кг</span>
       <a class="gallery-link" href="#">
         <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -369,7 +370,7 @@
     </li>
     <li class="gallery-item catalog-gallery-item">
       <a href="#" class="title gallery-title link">Клубничка</a>
-      <p class="descr gallery-descr">Сливочный пломбир с клубничным вкусом</p>
+      <p class="descr gallery-descr">Сливочный пломбир<br>с клубничным вкусом</p>
       <span class="gallery-span">300 ₽/кг</span>
       <a class="gallery-link" href="#">
         <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -395,7 +396,7 @@
     </li>
     <li class="gallery-item catalog-gallery-item">
       <a href="#" class="title gallery-title link">Ментол</a>
-      <p class="descr gallery-descr">Сливочный пломбир с ментоловым сиропом</p>
+      <p class="descr gallery-descr">Сливочный пломбир<br>с ментоловым сиропом</p>
       <span class="gallery-span">320 ₽/кг</span>
       <a class="gallery-link" href="#">
         <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -421,7 +422,7 @@
     </li>
     <li class="gallery-item catalog-gallery-item">
       <a href="#" class="title gallery-title link">Крем-брюле</a>
-      <p class="descr gallery-descr">Классическое крем-брюле</p>
+      <p class="descr gallery-descr">Классическое<br>крем-брюле</p>
       <span class="gallery-span">280 ₽/кг</span>
       <a class="gallery-link" href="#">
         <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -444,19 +445,23 @@
         </a>
       </li>
       <li class="pagination-item">
+        <ul class="pagination-list">
+          <li class="pagination-number-item">
             <a class="pagination-numbers-link pagination-numbers-link-active" href="#">1</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-number-item">
             <a class="pagination-numbers-link" href="#">2</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-number-item">
             <a class="pagination-numbers-link" href="#">3</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-number-item">
             <a class="pagination-numbers-link" href="#">4</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-number-item">
             <a class="pagination-numbers-link" href="#">5</a>
+          </li>
+          </ul>
           </li>
         <li class="pagination-item">
         <a class="pagination-link continue-link" href="#">
@@ -471,17 +476,17 @@
  </main>
  <footer class="page-footer">
   <ul class="social-list">
-    <li class="social-item">
+    <li class="social-item social-footer-item">
       <a class="social-link telegram" href="https://t.me/htmlacademy">
         <span class="visually-hidden">Телеграм</span>
       </a>
     </li>
-    <li class="social-item">
+    <li class="social-item social-footer-item">
       <a class="social-link vk" href="https://vk.com/htmlacademy">
         <span class="visually-hidden">Вконтакте</span>
       </a>
     </li>
-    <li class="social-item">
+    <li class="social-item social-footer-item">
       <a class="social-link youtube" href="https://youtube.com/user/htmlacademyru">
         <span class="visually-hidden">Ютуб</span>
       </a>
