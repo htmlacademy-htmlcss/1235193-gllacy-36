@@ -1541,6 +1541,10 @@ background: url("../images/ice-cream.svg") no-repeat center;
   text-underline-offset: 2px;
 }
 
+.footer-link:active {
+  opacity: 0.6;
+}
+
 .footer-copywright {
   display: block;
 }
@@ -2028,8 +2032,6 @@ gap: 17px 23px;
   background-color: rgba(252, 252, 252, 0.5);
   outline: 1px solid #FCFCFC;
 }
-
-
 
 .pagination-numbers-link-active {
   background-color: #FCFCFC;
