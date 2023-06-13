@@ -106,7 +106,6 @@ display: inline-block;
 padding: 6px 12px;
 }
 
-
 .link-catalog-svg {
   display: inline-block;
   vertical-align: middle;
@@ -161,7 +160,6 @@ background-color: rgba(252, 252, 252, 0.5);
   font-size: 14px;
   padding: 5px 18px;
 }
-
 
 .search {
   padding: 6px 10px 7px;
@@ -322,7 +320,7 @@ left: 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
@@ -397,7 +395,7 @@ left: 16px;
   width: 324px;
   padding: 14px 16px;
   padding-bottom: 12px;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
@@ -589,7 +587,6 @@ border: 1px solid #EA5454;
   display: block;
 }
 
-
 .nav-item-right:focus-within .cart-outer {
   display: block;
 }
@@ -745,7 +742,6 @@ opacity: 0.6;
   display: block;
 }
 
-
 .main-image-block {
   position: relative;
   height: 150px;
@@ -773,8 +769,6 @@ opacity: 0.6;
   z-index: -1;
   background-color: rgba(255, 255, 255, 0.5);
 }
-
-
 
 .main-image {
   height: 100%;
@@ -850,7 +844,6 @@ opacity: 0.6;
   background-color: rgba(252, 252, 252, 0.5);
   border: none;
 }
-
 
 .hero-container-bottom {
   display: flex;
@@ -930,8 +923,6 @@ opacity: 0.6;
   border-radius: 50%;
   background: rgba(252, 252, 252, 0.3);
 }
-
-
 
 .social-link::before {
   content: "";
@@ -1390,7 +1381,6 @@ background: url("../images/ice-cream.svg") no-repeat center;
   border: 2px solid #2D3440;
 }
 
-
 .field:focus {
   border: 2px solid #2D3440;
 }
@@ -1400,7 +1390,8 @@ background: url("../images/ice-cream.svg") no-repeat center;
 }
 
 .field:invalid:not(:placeholder-shown):hover {
-  border: 2px solid #EA5454;
+  border: 1px solid #EA5454;
+  outline: 1px solid #EA5454;
 }
 
 .field:disabled {
@@ -1642,8 +1633,6 @@ background: url("../images/ice-cream.svg") no-repeat center;
 .breadcrumbs-item:not(:last-child) {
   margin-right: 28px;
 }
-
-
 
 .breadcrumbs-link {
   display: inline-block;
@@ -2005,6 +1994,7 @@ gap: 17px 23px;
   flex-wrap: wrap;
   max-width: 120px;
 }
+
 .pagination-number-item:not(:first-child) {
  margin-left: 2px;
 }
@@ -2025,6 +2015,21 @@ gap: 17px 23px;
   font-weight: 400;
   line-height: 20px;
 }
+
+.pagination-numbers-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-numbers-link:focus {
+   outline: 1px solid #2D3440;
+}
+
+.pagination-numbers-link:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 1px solid #FCFCFC;
+}
+
+
 
 .pagination-numbers-link-active {
   background-color: #FCFCFC;
