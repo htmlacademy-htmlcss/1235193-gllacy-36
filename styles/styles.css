@@ -431,7 +431,7 @@ body {
 
 .input-bottom {
 	margin-bottom: 32px;
-	letter-spacing: 0.15em;
+	letter-spacing: -0.12em;
 }
 
 .button {
@@ -650,7 +650,6 @@ body {
 	background-color: #fcfcfc;
 	font-family: "Inter", sans-serif;
 	font-weight: 700;
-	;
 	font-size: 24px;
 	line-height: 30px;
 	color: #2d3440;
@@ -1242,7 +1241,9 @@ body {
 	padding-bottom: 67px;
 	border-radius: 16px;
   background-color: #b9b9b9;
-	background: url("../images/frame-article.jpg") no-repeat center center;
+	background-image: url("../images/frame-article.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 	background-size: 100% 100%;
 }
 
@@ -1263,7 +1264,9 @@ body {
 
 .subscribe {
   background-color: #b9b9b9;
-	background: url("../images/frame-subscribe.png") no-repeat center center;
+	background-image: url("../images/frame-subscribe.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 	background-size: 100% 100%;
 	padding: 32px 28px 28px 32px;
 }
@@ -1317,7 +1320,10 @@ body {
 .delivery {
 	padding: 64px;
   background-color: #b9b9b9;
-	background: url("../images/frame-delivery.jpg") no-repeat center center;
+	background-image: url("../images/frame-delivery.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 	border-radius: 16px;
 	display: flex;
 	justify-content: space-between;
@@ -1521,7 +1527,9 @@ body {
 
 .contacts {
   background-color: #b9b9b9;
-	background: url("../images/frame-contacts.jpg") no-repeat center center;
+	background-image: url("../images/frame-contacts.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 	background-size: cover;
 	padding: 64px;
 	border-radius: 16px;
@@ -2197,7 +2205,6 @@ body {
 .form-field-modal:invalid:not(:placeholder-shown):hover {
 	border: 1px solid #ea5454;
 	outline: 1px solid #ea5454;
-	;
 }
 
 .field:disabled {
